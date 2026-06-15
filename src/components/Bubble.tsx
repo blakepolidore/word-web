@@ -16,7 +16,7 @@ type Props = {
 
 const PALETTE = [
   "#475569", // root — slate
-  "#f4b66a", // amber
+  "#5fa674", // green
   "#1e1b4b", // indigo-dark
   "#ef6b6b", // coral
   "#5b3a8b", // purple
