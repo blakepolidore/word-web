@@ -7,8 +7,8 @@ export type LayoutPos = {
   angle: number;
 };
 
-const BASE_RADIUS = 180;
-const RADIAL_INCREMENT = 150;
+const BASE_RADIUS = 210;
+const RADIAL_INCREMENT = 180;
 
 /**
  * Radial tidy-tree layout.
