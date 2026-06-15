@@ -1,5 +1,4 @@
 import type { WebState } from "./types";
-import { ensureAngles } from "./tree";
 
 const KEY = "word-web:v1";
 
@@ -9,8 +8,7 @@ export function loadWeb(): WebState {
     if (!raw) return { root: null };
     const parsed = JSON.parse(raw) as WebState;
     if (!parsed || typeof parsed !== "object") return { root: null };
-    const root = parsed.root ?? null;
-    return { root: root ? ensureAngles(root) : null };
+    return { root: parsed.root ?? null };
   } catch {
     return { root: null };
   }
